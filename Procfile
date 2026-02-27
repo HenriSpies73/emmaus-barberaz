@@ -1,1 +1,1 @@
-web: gunicorn emmaus.wsgi:application
+web: python manage.py migrate && gunicorn emmaus.wsgi:application
